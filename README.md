@@ -1,2 +1,2 @@
 # tarot.cards
-Just simple html to use tarot cards.
+Just a simple page to see tarot cards meanings.
