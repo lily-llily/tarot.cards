@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Master Walkthrough - Comprehensive Edition</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0e17;
+            color: #fffffe;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            color: #ff8906;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            width: 100%;
+            text-align: center;
+            color: #a7a9be;
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            width: 100%;
+            border-bottom: 2px solid #ff8906;
+            margin: 45px 0 15px;
+            padding-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .title-hover-zone {
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: help;
+        }
+
+        .section-title {
+            color: #ff8906;
+            font-size: 1.6em;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .info-icon {
+            margin-left: 10px;
+            font-size: 0.7em;
+            background: #ff8906;
+            color: #0f0e17;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .card-container {
+            position: relative;
+            width: 145px;
+            background-color: #2e2f3e;
+            border: 1px solid #4a4c6a;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            cursor: help;
+            transition: all 0.2s ease;
+            padding: 10px;
+            font-size: 0.85em;
+        }
+
+        .card-container img {
+            width: 100%;
+            height: auto;
+            max-height: 240px;
+            object-fit: contain;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            background-color: #1a1a1a;
+        }
+
+        .card-container:hover {
+            background-color: #ff8906;
+            color: #0f0e17;
+            transform: translateY(-5px);
+            z-index: 5;
+            box-shadow: 0 10px 20px rgba(255, 137, 6, 0.4);
+        }
+
+        .tooltip {
+            visibility: hidden;
+            width: 300px;
+            background-color: #fffffe;
+            color: #0f0e17;
+            text-align: left;
+            border-radius: 4px;
+            padding: 15px;
+            position: absolute;
+            z-index: 100;
+            bottom: 105%; 
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.8);
+            line-height: 1.5;
+            pointer-events: none;
+            border-left: 5px solid #ff8906;
+            font-size: 0.9em;
+            font-weight: normal;
+        }
+
+        .title-hover-zone .tooltip {
+            left: 0;
+            transform: none;
+            bottom: 130%;
+        }
+
+        .title-hover-zone:hover .tooltip,
+        .card-container:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tooltip::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #fffffe transparent transparent transparent;
+        }
+
+        .title-hover-zone .tooltip::after {
+            left: 20px;
+            margin-left: 0;
+        }
+
+        b { color: #ff8906; }
+        .card-container:hover b { color: #0f0e17; }
+    </style>
+</head>
+<body>
+
+    <h1>Tarot Master Walkthrough</h1>
+    <p class="subtitle">Comprehensive Guide: Hover for full meanings from the walkthrough</p>
+
+    <div class="section-header">
+        <div class="title-hover-zone">
+            <h2 class="section-title">Major Arcana</h2><span class="info-icon">?</span>
+            <div class="tooltip"><b>The Major Arcana:</b> These are the "keys to unlocking life's mysteries." They represent major life themes, spiritual lessons, and karmic influences that transcend the daily elemental energy of the suits.</div>
+        </div>
+    </div>
+    <div class="card-container"><img src="img/arcana/fool.jpg">0 The Fool<div class="tooltip"><b>The Fool:</b> Card Zero. Represents a fresh start or new chapter without ties to the past. It's the ability to break out of thought patterns or toxic cycles and be reborn. Warning: Preparation is key; don't be reckless without understanding the consequences.</div></div>
+    <div class="card-container"><img src="img/arcana/magician.jpg">I The Magician<div class="tooltip"><b>The Magician:</b> The master manifester. Shows that you have all the tools (Cups, Swords, Wands, Pentacles) at your disposal. Success comes through alignment and realizing that your thoughts directly shape your physical reality.</div></div>
+    <div class="card-container"><img src="img/arcana/priestess.jpg">II High Priestess<div class="tooltip"><b>High Priestess:</b> The Secret Keeper. Represents the duality between the conscious and subconscious. Master of "Shadow Work." She urges you to look deeper into signs and synchronicities, as hidden knowledge is currently at play.</div></div>
+    <div class="card-container"><img src="img/arcana/empress.jpg">III The Empress<div class="tooltip"><b>The Empress:</b> Embodiment of feminine energy and the season of spring. Represents growth, fertility, and new life. It's a nudge to embrace your Creative Energy, pay attention to physical health, and allow projects to grow naturally.</div></div>
+    <div class="card-container"><img src="img/arcana/emperor.jpg">IV The Emperor<div class="tooltip"><b>The Emperor:</b> Control and command. Where the Empress wants things to grow wild, the Emperor provides direction. He warns you to put your foot down and re-establish structure before a situation gets out of hand.</div></div>
+    <div class="card-container"><img src="img/arcana/hierophant.jpg">V The Hierophant<div class="tooltip"><b>The Hierophant:</b> The link between the physical and spiritual. Represents institutions, books, and formal knowledge. It suggests that a spiritual routine or seeking traditional wisdom from a mentor or bureaucratic document is beneficial now.</div></div>
+    <div class="card-container"><img src="img/arcana/lovers.jpg">VI The Lovers<div class="tooltip"><b>The Lovers:</b> Not just about romance; it's about moral choices and resisting temptation. It represents the choices we make to maintain our "Paradise." You are urged to make a decision aligned with your highest integrity.</div></div>
+    <div class="card-container"><img src="img/arcana/chariot.jpg">VII The Chariot<div class="tooltip"><b>The Chariot:</b> Mastery over internal dualities (light/dark, yin/yang). Represents victory and raising your vibration through self-actualization. Things are moving forward and upward through sheer willpower and self-knowledge.</div></div>
+    <div class="card-container"><img src="img/arcana/strength.jpg">VIII Strength<div class="tooltip"><b>Strength:</b> Mastering your animalistic nature. It's about being "friends" with your wilder side rather than locking it away. This card indicates success achieved through integrity, inner willpower, and self-acceptance.</div></div>
+    <div class="card-container"><img src="img/arcana/hermit.jpg">IX The Hermit<div class="tooltip"><b>The Hermit:</b> Reconnecting with your soul. Urges you to take time for yourself to think and feel without external influence. The lantern shows that even if you feel lost, the light within you will guide the way.</div></div>
+    <div class="card-container"><img src="img/arcana/fortune.jpg">X Wheel of Fortune<div class="tooltip"><b>Wheel of Fortune:</b> Fate, Karma, and the Ebb and Flow. Represents a chapter ending and a new one starting. The universe is course-correcting; stay adaptable as the wheel turns from good to bad or back again.</div></div>
+    <div class="card-container"><img src="img/arcana/justice.jpg">XI Justice<div class="tooltip"><b>Justice:</b> Blind and balanced decision-making. You must step back from emotions and use logic. The outcome will be the "best" for the long run, even if it feels difficult in the moment.</div></div>
+    <div class="card-container"><img src="img/arcana/hanged.jpg">XII Hanged Man<div class="tooltip"><b>Hanged Man:</b> The Martyr. Represents standing by your convictions even if it means sacrifice. It signals that energy has slowed to a crawl to give you time to think and come to a better, more aligned conclusion.</div></div>
+    <div class="card-container"><img src="img/arcana/death.jpg">XIII Death<div class="tooltip"><b>Death:</b> A natural conclusion and transition. Not a surprise, but an organic end to a season. Hanging on will cause pain; allowing it to run its course will usher in an inevitable and necessary rebirth.</div></div>
+    <div class="card-container"><img src="img/arcana/temperance.jpg">XIV Temperance<div class="tooltip"><b>Temperance:</b> Mastery of balance. Similar to the High Priestess, but focused on the active alignment of the conscious and subconscious. Urges you to seek moderation and groundedness to allow the situation to stabilize.</div></div>
+    <div class="card-container"><img src="img/arcana/devil.jpg">XV The Devil<div class="tooltip"><b>The Devil:</b> Binding energy. Represents our "Shadow Side"—urges, addictions, or toxic cycles that keep us trapped. It calls for you to understand your shadow so you can relinquish its control over you.</div></div>
+    <div class="card-container"><img src="img/arcana/tower.jpg">XVI The Tower<div class="tooltip"><b>The Tower:</b> Sudden upheaval. Unlike the slow end of Death, this is an unforeseen collapse. It happens because the foundation was misaligned with your path; the universe is tearing it down to course-correct you.</div></div>
+    <div class="card-container"><img src="img/arcana/star.jpg">XVII The Star<div class="tooltip"><b>The Star:</b> Healing and optimism. This is the peace that follows the Tower's destruction. Represents deep healing, presence, and a clear path toward an optimistic future. You are energetically "set free."</div></div>
+    <div class="card-container"><img src="img/arcana/moon.jpg">XVIII The Moon<div class="tooltip"><b>The Moon:</b> Illusions and mystery. Moonlight is reflected, not direct—meaning not everything is as it seems. Don't try to figure it out now; embrace the mystery and allow your psychic messages to pass through organically.</div></div>
+    <div class="card-container"><img src="img/arcana/sun.jpg">XIX The Sun<div class="tooltip"><b>The Sun:</b> Ultimate clarity and joy. The blockage is passing. It represents movement away from a wall toward happiness. Stay humble so the light doesn't blind you, but embrace the radiant success incoming.</div></div>
+    <div class="card-container"><img src="img/arcana/judgement.jpg">XX Judgement<div class="tooltip"><b>Judgement:</b> Rising to the occasion. It's about changing your vibration and answering a call. You are being asked to understand what is best for you and take the necessary steps to move forward energetically.</div></div>
+    <div class="card-container"><img src="img/arcana/world.jpg">XXI The World<div class="tooltip"><b>The World:</b> The final culmination. Success, spiritual mastery, and total fulfillment in a situation. You've reached the end of a long journey, and now the cycle is ready to reset to zero.</div></div>
+
+    <div class="section-header">
+        <div class="title-hover-zone">
+            <h2 class="section-title">Suit of Wands</h2><span class="info-icon">?</span>
+            <div class="tooltip"><b>Wands (Fire Energy):</b> Action, inspiration, and willpower. This suit is about the things we "do" and our personal drive to create and move forward. (Signs: Leo, Aries, Sagittarius)</div>
+        </div>
+    </div>
+    <div class="card-container"><img src="img/wand/wand_ace.jpg">Ace of Wands<div class="tooltip"><b>Ace:</b> A new spark of inspiration, a new project, or physical sexuality. Represents fire energy reaching out to you—seize the opportunity before it passes you by.</div></div>
+    <div class="card-container"><img src="img/wand/wand_two.jpg">Two of Wands<div class="tooltip"><b>Two:</b> A door opening to a new adventure. You are making the decision to embark on a venture based on your own will. An omen to keep going and commit to your path.</div></div>
+    <div class="card-container"><img src="img/wand/wand_three.jpg">Three of Wands<div class="tooltip"><b>Three:</b> Mastering and understanding the path you've chosen. You are becoming more established and master of your journey; no need to turn back now.</div></div>
+    <div class="card-container"><img src="img/wand/wand_four.jpg">Four of Wands<div class="tooltip"><b>Four:</b> Stability, celebration, and the home. Represents a significant homecoming or a reason to celebrate with those in your immediate circle.</div></div>
+    <div class="card-container"><img src="img/wand/wand_five.jpg">Five of Wands<div class="tooltip"><b>Five:</b> Conflict caused by fire energy. This struggle is often internal or caused by your own choices. It’s a sign that the universe is teaching you something through this blockage.</div></div>
+    <div class="card-container"><img src="img/wand/wand_six.jpg">Six of Wands<div class="tooltip"><b>Six:</b> Victory and accomplishment. Public acknowledgment of your success is likely. An extremely positive card predicting a winning outcome for your current project.</div></div>
+    <div class="card-container"><img src="img/wand/wand_seven.jpg">Seven of Wands<div class="tooltip"><b>Seven:</b> External pressure. Unlike the 5, this is a struggle from the outside. You must decide if fighting for your beliefs is worth the energy or if you should retreat.</div></div>
+    <div class="card-container"><img src="img/wand/wand_eight.jpg">Eight of Wands<div class="tooltip"><b>Eight:</b> Rapid movement. Things are taking off faster than expected. Could also represent quick communication, an incoming surprise, or a sudden change in direction.</div></div>
+    <div class="card-container"><img src="img/wand/wand_nine.jpg">Nine of Wands<div class="tooltip"><b>Nine:</b> Resilience. You may be worn out, but you are still standing. Deciding whether to step back for your health or finally step out and show yourself to the world.</div></div>
+    <div class="card-container"><img src="img/wand/wand_ten.jpg">Ten of Wands<div class="tooltip"><b>Ten:</b> Over-responsibility. You are carrying a burden that is far too heavy. Question if you really need to be responsible for all these circumstances or if you should lighten the load.</div></div>
+    <div class="card-container"><img src="img/wand/wand_page.jpg">Page of Wands<div class="tooltip"><b>Page:</b> Experimentation and play. A young spirit of "doing." It's time to try out your ideas in the real world and apply your passion practically.</div></div>
+    <div class="card-container"><img src="img/wand/wand_knight.jpg">Knight of Wands<div class="tooltip"><b>Knight:</b> Bold action and charging forward. However, it can be flaky energy—make sure you are actually committed to what you are jumping into.</div></div>
+    <div class="card-container"><img src="img/wand/wand_queen.jpg">Queen of Wands<div class="tooltip"><b>Queen:</b> Magnetic, confident, and sexually charged. She speaks up for herself but keeps her secrets. A master of attraction and self-actualization.</div></div>
+    <div class="card-container"><img src="img/wand/wand_king.jpg">King of Wands<div class="tooltip"><b>King:</b> The master of fire. Executes plans with precision and success. He knows when to burn something down so that it can regrow even better than before.</div></div>
+
+    <div class="section-header">
+        <div class="title-hover-zone">
+            <h2 class="section-title">Suit of Swords</h2><span class="info-icon">?</span>
+            <div class="tooltip"><b>Swords (Air Energy):</b> Intellect, the human mind, psychology, and communication. This suit deals with our thoughts, perceptions, and the conflicts that arise within our heads. (Signs: Gemini, Aquarius, Libra)</div>
+        </div>
+    </div>
+    <div class="card-container"><img src="img/sword/sword_ace.jpg">Ace of Swords<div class="tooltip"><b>Ace:</b> New perspectives and breakthroughs. An opportunity for a "cut through the fog." Look for news, things to read, or conversations that provoke a change in mindset.</div></div>
+    <div class="card-container"><img src="img/sword/sword_two.jpg">Two of Swords<div class="tooltip"><b>Two:</b> Decision-making. You may be blind to the truth right now. You are urged to make a choice using your mind rather than just what you think you see. Don't let indecision stall you.</div></div>
+    <div class="card-container"><img src="img/sword/sword_three.jpg">Three of Swords<div class="tooltip"><b>Three:</b> Heartbreak and sorrow. Signals that current actions are leading to hurt. Your perception may be altered by the pain you feel—take time to care for your heart center first.</div></div>
+    <div class="card-container"><img src="img/sword/sword_four.jpg">Four of Swords<div class="tooltip"><b>Four:</b> Rest and respite. After the heartbreak, you need meditation and a clear mind. Sharpen your mental faculty by stepping away from worries and simply breathing.</div></div>
+    <div class="card-container"><img src="img/sword/sword_five.jpg">Five of Swords<div class="tooltip"><b>Five:</b> External conflict and arguing. You might win the argument, but at what cost? Is proving you are "right" worth hurting others or making the situation worse?</div></div>
+    <div class="card-container"><img src="img/sword/sword_six.jpg">Six of Swords<div class="tooltip"><b>Six:</b> Transition. Slow movement away from a heavy situation. Even if you aren't fully healed, you must move away to start the recovery process and find a new scenery.</div></div>
+    <div class="card-container"><img src="img/sword/sword_seven.jpg">Seven of Swords<div class="tooltip"><b>Seven:</b> Making a getaway. Could be an urge to "get the F out" of a situation or a warning about deceit and stolen property. Check if you are overlooking something that could bite you later.</div></div>
+    <div class="card-container"><img src="img/sword/sword_eight.jpg">Eight of Swords<div class="tooltip"><b>Eight:</b> Mental claustrophobia. You feel trapped and confused, but the blindfold and binds are only your own thoughts. You can break free the moment you choose a new perspective.</div></div>
+    <div class="card-container"><img src="img/sword/sword_nine.jpg">Nine of Swords<div class="tooltip"><b>Nine:</b> Anxiety and nightmares. The suit of swords at its darkest—being tormented by your own thoughts at night. Step back and realize these fears only exist in your mind.</div></div>
+    <div class="card-container"><img src="img/sword/sword_ten.jpg">Ten of Swords<div class="tooltip"><b>Ten:</b> Ultimate defeat. Betrayal and endings that feel heavy (like Julius Caesar). However, the sun rising in the background shows that a new beginning is already dawning from this end.</div></div>
+    <div class="card-container"><img src="img/sword/sword_page.jpg">Page of Swords<div class="tooltip"><b>Page:</b> New messages and news of change. A surprise conversation or an email that will shift your perspective. A young, curious energy seeking the truth.</div></div>
+    <div class="card-container"><img src="img/sword/sword_knight.jpg">Knight of Swords<div class="tooltip"><b>Knight:</b> Swift expression. You are urged to stop holding back and send that text or email. Be careful, though—rush communication can sometimes lead to regret.</div></div>
+    <div class="card-container"><img src="img/sword/sword_queen.jpg">Queen of Swords<div class="tooltip"><b>Queen:</b> Objective intellect. She has no problem making a decision but can be isolated. Urges you to make a clear choice without letting emotions cloud the "best" path.</div></div>
+    <div class="card-container"><img src="img/sword/sword_king.jpg">King of Swords<div class="tooltip"><b>King:</b> The master of domain. He makes the right decision regardless of popular opinion. Wiser and authoritative, he does what is necessary to make things correct and right.</div></div>
+
+    <div class="section-header">
+        <div class="title-hover-zone">
+            <h2 class="section-title">Suit of Cups</h2><span class="info-icon">?</span>
+            <div class="tooltip"><b>Cups (Water Energy):</b> Emotions, relationships, joy, and the heart. This suit represents the things we "feel" and our interpersonal connections with others and ourselves. (Signs: Scorpio, Pisces, Cancer)</div>
+        </div>
+    </div>
+    <div class="card-container"><img src="img/cups/cups_ace.jpg">Ace of Cups<div class="tooltip"><b>Ace:</b> Ever-fresh happiness. A new connection or project that makes your heart overflow. Represents tapping into a constant source of joy and emotional renewal.</div></div>
+    <div class="card-container"><img src="img/cups/cups_two.jpg">Two of Cups<div class="tooltip"><b>Two:</b> Romance and deep vibes. Represents a significant connection with another person or a healing relationship with yourself. A very positive omen for love and harmony.</div></div>
+    <div class="card-container"><img src="img/cups/cups_three.jpg">Three of Cups<div class="tooltip"><b>Three:</b> Group joy and community. It's the "party" card. Connecting with friends, sharing happiness, and having a joyous occasion where you feel supported by a group.</div></div>
+    <div class="card-container"><img src="img/cups/cups_four.jpg">Four of Cups<div class="tooltip"><b>Four:</b> Emotional break. Taking a "chill pill" because you've had too much external influence. It can also warn that you've been a recluse too long and are missing a new opportunity.</div></div>
+    <div class="card-container"><img src="img/cups/cups_five.jpg">Five of Cups<div class="tooltip"><b>Five:</b> Sorrow and fixation. You are focused on the spilled cups (loss) and not seeing the two that are still full. A nudge to shift your perspective away from self-pity when you're ready.</div></div>
+    <div class="card-container"><img src="img/cups/cups_six.jpg">Six of Cups<div class="tooltip"><b>Six:</b> Inner Child and nostalgia. Connecting with pure, innocent joy. A reminder to stay light-hearted and open your heart to fun connections like you did in childhood.</div></div>
+    <div class="card-container"><img src="img/cups/cups_seven.jpg">Seven of Cups<div class="tooltip"><b>Seven:</b> Choices and daydreams. Your head is in the clouds. Many opportunities seem real, but you must choose wisely and avoid looking at things through rose-colored glasses.</div></div>
+    <div class="card-container"><img src="img/cups/cups_eight.jpg">Eight of Cups<div class="tooltip"><b>Eight:</b> Seeking more. Walking away from current success or a situation because you need more emotional growth and a different perspective. A journey to find "that other cup."</div></div>
+    <div class="card-container"><img src="img/cups/cups_nine.jpg">Nine of Cups<div class="tooltip"><b>Nine:</b> Wish fulfillment. A miracle or a very pleasant surprise. Dream big and don't limit your happiness. You have enough right now to feel satisfied and full.</div></div>
+    <div class="card-container"><img src="img/cups/cups_ten.jpg">Ten of Cups<div class="tooltip"><b>Ten:</b> Emotional climax. Dreams coming true in love, family, and relationships. Success and total satisfaction on a soul level. A very long-term positive outcome.</div></div>
+    <div class="card-container"><img src="img/cups/cups_page.jpg">Page of Cups<div class="tooltip"><b>Page:</b> Emotional messages. Could be a playful date offer or news that makes you very happy. Warning: don't be too immature or dramatic with your feelings.</div></div>
+    <div class="card-container"><img src="img/cups/cups_knight.jpg">Knight of Cups<div class="tooltip"><b>Knight:</b> The "College Romance" energy. More mature than the page, he seeks emotional depth and beauty. Slow down and get to know the beauty in life and the people around you.</div></div>
+    <div class="card-container"><img src="img/cups/cups_queen.jpg">Queen of Cups<div class="tooltip"><b>Queen:</b> Totally in tune with intuition. Represents psychic messages, dreams, and telepathic connections. Trust your heart and feel things out even if they don't make logical sense.</div></div>
+    <div class="card-container"><img src="img/cups/cups_king.jpg">King of Cups<div class="tooltip"><b>King:</b> Mastery of the heart. He seems cold but feels deeply. He balances emotion with truth, making the best decision for the heart using both logic and love.</div></div>
+
+    <div class="section-header">
+        <div class="title-hover-zone">
+            <h2 class="section-title">Suit of Pentacles</h2><span class="info-icon">?</span>
+            <div class="tooltip"><b>Pentacles (Earth Energy):</b> Stability, work, money, and grounding. This suit is about our physical world, how we sustain ourselves, and our sense of security on the planet. (Signs: Virgo, Taurus, Capricorn)</div>
+        </div>
+    </div>
+    <div class="card-container"><img src="img/pent/pent_ace.jpg">Ace of Pentacles<div class="tooltip"><b>Ace:</b> New grounding. A slow-moving but very positive omen for your finances or sense of stability. Something is coming that aligns you with your physical self.</div></div>
+    <div class="card-container"><img src="img/pent/pent_two.jpg">Two of Pentacles<div class="tooltip"><b>Two:</b> Balance. Managing your physical energy and balancing what you "need" to do vs what you "want" to do. Ground yourself to stop leaking energy through worry.</div></div>
+    <div class="card-container"><img src="img/pent/pent_three.jpg">Three of Pentacles<div class="tooltip"><b>Three:</b> Collaboration. Group work where your efforts are highly regarded. If you put your work out there now, it will be well-rewarded and potentially bring financial gain.</div></div>
+    <div class="card-container"><img src="img/pent/pent_four.jpg">Four of Pentacles<div class="tooltip"><b>Four:</b> Stability vs Greed. You have enough, but you might be clinging too tightly to a situation (or a person) that isn't doing you any good. Ask if you are actually aligned with what you're holding.</div></div>
+    <div class="card-container"><img src="img/pent/pent_five.jpg">Five of Pentacles<div class="tooltip"><b>Five:</b> Lack mindset. Represents the "ebb" of the flow. You may feel like you don't have enough, or you are envious of others. Prepare for a phase where you need to be conservative.</div></div>
+    <div class="card-container"><img src="img/pent/pent_six.jpg">Six of Pentacles<div class="tooltip"><b>Six:</b> Give and Take. Represents accumulated wisdom or financial stability. It's a sign to either offer your practical help to someone else or be humble enough to ask for it.</div></div>
+    <div class="card-container"><img src="img/pent/pent_seven.jpg">Seven of Pentacles<div class="tooltip"><b>Seven:</b> Patience. Your "crop" is growing. Slow down and appreciate how your efforts have paid off so far. Review the details to see if any further action is actually required.</div></div>
+    <div class="card-container"><img src="img/pent/pent_eight.jpg">Eight of Pentacles<div class="tooltip"><b>Eight:</b> Craftsmanship. Fulfillment through hard work. You are aligned with how you exchange energy with the world. Your efforts are giving back to you in a satisfying way.</div></div>
+    <div class="card-container"><img src="img/pent/pent_nine.jpg">Nine of Pentacles<div class="tooltip"><b>Nine:</b> Independent security. You are well-off and established. However, check if you are self-isolating too much—comfort is great, but don't stay in your shell forever.</div></div>
+    <div class="card-container"><img src="img/pent/pent_ten.jpg">Ten of Pentacles<div class="tooltip"><b>Ten:</b> Legacy and wealth. Whatever you are doing now has positive long-term consequences. It's a card of abundance in family, career, and future security.</div></div>
+    <div class="card-container"><img src="img/pent/pent_pages.jpg">Page of Pentacles<div class="tooltip"><b>Page:</b> New study. Someone starting a new trade or adventure. It's a sign to begin a new endeavor that will eventually lead to physical gratification.</div></div>
+    <div class="card-container"><img src="img/pent/pent_knight.jpg">Knight of Pentacles<div class="tooltip"><b>Knight:</b> Slow and steady. The most rational night. He is very dependable but works slowly. Don't rush the process; logical steps will get the job done eventually.</div></div>
+    <div class="card-container"><img src="img/pent/pent_queen.jpg">Queen of Pentacles<div class="tooltip"><b>Queen:</b> Nurturing Mother Earth. Urges you to take care of your body and your home. Enjoy the comforts of your physical life and use grounding to align yourself.</div></div>
+    <div class="card-container"><img src="img/pent/pent_king.jpg">King of Pentacles<div class="tooltip"><b>King:</b> Master of stability. Be as practical as possible. Don't take risks right now; be conservative with your moves and listen to practical, expert advice.</div></div>
+
+</body>
+</html>
